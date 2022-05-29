@@ -9,7 +9,6 @@ import com.jdw.pojo.User;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.util.MultiValueMap;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -37,9 +36,9 @@ class MybatisPlusApplicationTests {
     @Test
     public void testInsert() {
         User user = new User();
-        user.setName("不想996");
-        user.setAge(699);
-        user.setEmail("6969696@qq.com");
+        user.setName("李四");
+        user.setAge(32);
+        user.setEmail("212121212@qq.com");
         //新增用户
         int count = userMapper.insert(user);
         System.out.println("新增的用户数量为: " + count);
@@ -60,11 +59,6 @@ class MybatisPlusApplicationTests {
     //测试删除
     @Test
     public void testDeleteByID() {
-//        User user = new User();
-//        user.setId(666L);
-//        user.setName("张三");
-//        user.setAge(18);
-//        userMapper.insert(user);
         //删除用户
         int i = userMapper.deleteById(666);
         System.out.println("删除的用户数为： " + i);

@@ -33,7 +33,6 @@
             <artifactId>mybatis-plus-boot-starter</artifactId>
             <version>3.4.3.1</version>
         </dependency>
-
         <!-- 打印 SQL 及执行时长 -->
         <dependency>
             <groupId>p6spy</groupId>
